@@ -1,0 +1,28 @@
+<template>
+  <validation-provider
+    v-slot="{ errors }"
+    tag="div"
+    :rules="validationRule"
+    :name="label"
+  >
+    <v-textarea
+      v-model="innerValue"
+      :label="label"
+      :error-messages="errors"
+      v-bind="attributes"
+    />
+  </validation-provider>
+</template>
+
+<script>
+  import FieldMixin from '@/components/Form/Mixins/FieldMixin'
+
+  export default {
+    name: 'TextArea',
+    mixins: [FieldMixin],
+  }
+</script>
+
+<style scoped>
+
+</style>
