@@ -5,7 +5,17 @@
   "author": "Saodat",
   "license": "MIT",
   "main": "./dist/vue-formbase-plugin.common.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saodat1998/vue-formbase-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saodat1998/vue-formbase-plugin/issues"
+  },
+  "homepage": "https://github.com/saodat1998/vue-formbase-plugin#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
